@@ -7,6 +7,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Backend server is running!');
+});
+
+
 app.post('/send-email', (req, res) => {
   const { name, email, message } = req.body;
   console.log("Received form data:", name, email, message); // 👈 ye line add karo
