@@ -62,7 +62,7 @@ form.addEventListener('submit', async function (e) {
   };
 
   try {
-    const res = await fetch('https://my-portfolio-backend.onrender.com/send-email', {
+    const res = await fetch('https://my-portfolio-2-g7d8.onrender.com/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
